@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", Cambria, Garamond, serif;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#root {
+  height: 97vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+  width: 375px;
+  margin: auto;
+  padding: 30px 25px;
+}
+
+#star {
+  width: 40px;
+  border-radius: 25px;
+  border: 0;
+  padding: 10px;
+  background-color: hsl(213, 19%, 25%);
+}
+
+.para {
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.rating-btn {
+  border-radius: 30px;
+  border: 0;
+  width: 45px;
+  height: 45px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.not-clicked {
+  background-color: hsl(213, 19%, 25%);
+  color: hsl(217, 12%, 63%);
+}
+
+.clicked {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 30px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.error {
+  border: 0;
+  border-radius: 15px;
+  background-color: red;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#thank-you-img {
+  width: 65%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.selected {
+  border: 0;
+  border-radius: 15px;
+  background-color: hsl(213, 19%, 25%);
+  color: hsl(25, 97%, 53%);
+  text-align: center;
+  margin: 5px auto 15px;
+  padding: 5px 15px;
+}
+
+.thank-you h2 {
+  margin: 15px auto 5px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 325px;
+  }
+}
